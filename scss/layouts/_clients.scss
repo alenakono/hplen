@@ -1,0 +1,22 @@
+.clients{
+    padding-top: 60px;
+    @include columns($width: 17%);
+    justify-content: center;
+    align-items: center;
+    @include media-big-mobile{
+        margin: 0 -15px 0 -15px;
+    }
+
+}
+.clients__item{
+    height: 90px;
+    padding: 13px 30px;
+    img{
+        max-height: 100%;
+        object-fit: cover;
+    }
+    @include media-tablet{
+        height: 40px;
+        padding: 5px;
+    }
+}

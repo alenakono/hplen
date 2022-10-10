@@ -1,0 +1,30 @@
+.suppliers{
+    padding: 60px 0 75px 0;
+    background-color: $color-grey-light;
+    box-shadow: 5px 5px 15px rgba(176, 174, 168, 0.25);
+
+}
+.suppliers__title{
+    text-align: center;
+    margin: 0 auto 49px auto;
+    max-width: 778px;
+}
+.suppliers__logotips{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.suppliers__logo{
+    margin-bottom: 20px;
+    img{
+        max-height: 81px;
+        min-height: 30px;
+        object-fit: cover;
+        @include media-big-mobile{
+            max-height: 40px;
+        }
+    }
+    
+}

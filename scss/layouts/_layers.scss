@@ -1,0 +1,212 @@
+.layers{
+    padding-top: 110px;
+    @include media-tablet{
+        padding-top: 70px;
+    }
+}
+.layers__title{
+    max-width: 900px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.layers__image{
+    position: relative;
+    max-width: 1846px;
+    right: -20%;
+    margin-top: 10%;
+    img{
+        width: 100%;
+    }
+    @include media-tablet{
+        right: -5%;
+        margin-top: 50%;
+        min-width: 450px;
+    }
+    @include media-big-mobile{
+        margin-top: 130%;
+        min-width: 100%;
+    }
+    
+    
+}
+.layers__icon{
+    position: absolute;
+
+}
+.layers__icon::before{
+    content: "+";
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: center;
+    height: 60px; 
+    width: 60px;
+    font-size: 50px; 
+    line-height: 105px; 
+    text-align: center; 
+    color: black;
+    background-color: $color-brand;
+    border-radius: 100%;
+    font-weight: normal;
+    font-family: serif;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    @include media-big-mobile{
+        height: 40px;
+        width: 40px;
+        font-size: 40px;
+    }
+}
+
+
+
+.layers__item{
+    position: absolute;
+    padding: 20px 30px;
+    max-width: 485px;
+    border: 1px solid #334483;
+    border-radius: 10px;
+    display: none;
+    transition: all 0.5s ease-in-out;
+    background-color: #fff;
+    z-index: 5;
+    @include media-big-mobile{
+        max-width: 100%;
+        width: 100%;
+    }
+}
+.layers-info._active{
+    .layers__icon::before{
+        content: "—";
+        background-color: $color-hover;
+        padding: 5px;
+    }
+    .layers__item{
+        display: block;
+    }
+}
+.layers-info__title{
+    color: $color-blue;
+    font-size: 2.5rem;
+    padding-bottom: 2px;
+    margin-bottom: 1px;
+    border-bottom: 1px dashed #808080;
+    display: inline-block;
+    max-width: 315px;
+    line-height: 140%;
+    @include media-big-mobile{
+        max-width: 100%;
+        width: 100%;
+    }
+}
+.layers-info__text{
+    font-weight: 400;
+    @include media-big-mobile{
+        width: 100%;
+    }
+}
+.layers-info__list{
+    font-weight: 400;
+    margin-top: 10px;
+    @include columns($width: 45%);
+}
+
+.layers-info_first{
+    .layers__icon{
+        top: 10%;
+        right: 25%;
+    }
+    .layers__item{
+        top: -10%;
+        @include media-tablet{
+            top: -55%;
+        }
+        @include media-big-mobile{
+            left: -5%;
+            top: -175%
+        }
+    }
+}
+.layers-info_second{
+    .layers__icon{
+        top: 25%;
+        left: 55%;
+    }
+    .layers__item{
+        top: -5%;
+        right: 60%;
+        @include media-tablet{
+            top: -55%;
+            left: 10%;
+        }
+        @include media-big-mobile{
+            left: -5%;
+            top: -170%;
+        }
+    }
+
+}
+.layers-info_third{
+    .layers__icon{
+        top: 40%;
+        left: 45%;
+    }
+    .layers__item{
+        top: 0%;
+        left: -10%;
+        @include media-tablet{
+            top: -55%;
+            left: 10%;
+        }
+        @include media-big-mobile{
+            left: -5%;
+            top: -170%;
+        }
+    }
+}
+.layers-info_fourth{
+    .layers__icon{
+        top: 50%;
+        left: 30%;
+    }
+    .layers__item{
+        top: 0%;
+        left: -15%;
+        @include media-tablet{
+            top: -55%;
+            left: 10%;
+        }
+        @include media-big-mobile{
+            left: -5%;
+            top: -170%;
+        }
+    }
+}
+.properties__info{
+    max-width: 305px;
+}
+.properties__item{
+    box-shadow: 5px 5px 15px rgba(176, 174, 168, 0.25);
+    border-radius: 10px;
+    background-color: $color-dark;
+    color: $color-white;
+    display: flex;
+    padding: 20px 10px 26px 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.properties__title{
+    text-transform: uppercase;
+    font-family: "Exo2";
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 130%;
+    margin-bottom: 15px;
+}
+.properties__text{
+    font-weight: 400;
+    line-height: 130%;
+}

@@ -1,0 +1,117 @@
+.catalog{
+    padding: 110px 0 90px 0;
+    @include media-tablet{
+        padding: 70px 0;
+    }
+}
+.catalog__title{
+    margin: 0 auto;
+    max-width: 734px;
+    margin-bottom: 45px;
+    text-align: center;
+}
+.catalog-menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+.catalog-menu_blue{
+    background-color: #2378B5;
+    filter: drop-shadow(5px 5px 15px rgba(176, 174, 168, 0.25));
+    border-radius: 5px;
+}
+.catalog-menu__img{
+    width: 100%;
+    height: 100px;
+    img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        filter: drop-shadow(5px 5px 15px rgba(176, 174, 168, 0.25));
+        border-radius: 5px;
+    }
+}
+.catalog-menu__item{
+    flex: 0 1 28%;
+    max-width: 392px;
+}
+.catalog-menu__text{
+    font-style: italic;
+}
+.catalog__button{
+    display: block;
+    margin: 0 auto;
+}
+.size{
+    display: flex;
+    align-items: center;
+    padding-bottom: 138px;
+    @include media-big-mobile{
+        display: block;
+    }
+}
+.size__list{
+    display: flex;
+    flex-wrap: wrap;
+    @include media-laptop{
+        display: block;
+    }
+    
+}
+.size__item{
+    flex: 0 1 50%;
+    margin-bottom: 15px;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.size-info{
+    max-width: 427px;
+    margin-right: 128px;
+    @include media-laptop{
+        margin-right: 50px;
+    }
+    @include media-tablet{
+        width: 40%;
+        margin-left: 20px;
+    }
+    @include media-big-mobile{
+        width: 100%;
+    }
+}
+.size__title{
+    font-family: "Exo2";
+    font-weight: 600;
+    font-size: 4rem;
+    margin-bottom: 30px;
+    line-height: 130%;
+}
+.size-info__layout{
+    margin-top: 60px;
+    display: flex;
+    @include media-big-mobile{
+        display: block;
+    }
+}
+.size-info__description{
+    margin-right: 28px;
+}
+.size__img{
+    max-width: 660px;
+    img{
+        width: 100%;
+    }
+    @include media-tablet{
+        min-width: 50%;
+    }
+    
+}
+li.li_colored:before {
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background-color: $color-brand;
+    border-radius: 50%;
+    margin-right: 10px;
+  }

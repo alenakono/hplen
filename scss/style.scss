@@ -1,0 +1,132 @@
+@import "./fonts";
+@import "./null";
+@import "./const";
+@import "./mixins";
+@import "./placeholder";
+
+@import "./layouts/header";
+@import "./layouts/top";
+@import "./layouts/about";
+@import "./layouts/usability";
+@import "./layouts/suppliers";
+@import "./layouts/catalog";
+@import "./layouts/consulting";
+@import "./layouts/examples";
+@import "./layouts/layers";
+@import "./layouts/program";
+@import "./layouts/contacts";
+@import "./layouts/clients";
+@import "./layouts/information";
+@import "./layouts/footer";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-size: 1.9rem;
+    font-weight: 600;
+    font-family: "Raleway", "Verdana", sans-serif;
+    line-height: 130%;
+    color: $color-dark;
+}
+.wrapper{
+    overflow: hidden;
+    min-height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    max-width: $content-width;
+    margin: 0 auto;
+    @include media-laptop{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+main{
+    margin-bottom: 70px;
+}
+.text_colored{
+    color: $color-brand;
+}
+.text_italic{
+    font-style: italic;
+}
+.button_colored{
+    padding: 14px 39px;
+    background-color: $color-brand;
+    color: $color-white;
+    font-weight: 700;
+    font-size: 1.6rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.24);
+    border-radius: 5px;
+    @include media-laptop{
+        font-size: 2rem;
+    }
+}
+.button_dark{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #32303E;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.24);
+    border-radius: 5px;
+    color: $color-white;
+    padding: 14px 39px;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 130%;
+    text-align: center;
+    @include media-laptop{
+        font-size: 2rem;
+    }
+}
+.button_light{
+    background-color: #fff;
+    padding: 12px 25px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.24);
+    border-radius: 5px;
+    color: $color-dark;
+    font-size: 1.6rem;
+    @include media-laptop{
+        font-size: 2rem;
+    }
+    
+}
+.href_colored{
+    color: $color-brand;
+}
+.title{
+    font-size: 5rem;
+    font-weight: 600;
+    color: $color-dark;
+    line-height: 120%;
+    font-family: "Exo2";
+    @include media-laptop{
+        font-size: 4rem;
+    }
+    @include media-big-mobile{
+        font-size: 3.5rem;
+    }
+}
+.text_dark{
+    color: $color-dark;
+    font-style: italic;
+}
+.text__blue{
+    font-style: italic;
+    color: $color-blue;
+}
+.layout-3-column{
+    @include columns($width: 30%);
+    @include media-laptop{
+        justify-content: space-around;
+    }
+}
+.layout-6-columns{
+    @include columns($width: 30%);
+}

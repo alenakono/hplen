@@ -1,0 +1,70 @@
+%transition{
+    transition: all 0.5s ease-in-out;
+}
+%hover__button_colored{
+    background-color: $color-hover;
+    cursor: pointer;
+}
+
+
+.button_colored {
+    @extend %transition;
+    &:hover{
+        @extend %hover__button_colored;
+    }
+}
+.button_dark{
+    @extend %transition;
+    &:hover{
+        background-color: $color-hover;
+    }
+}
+.button_light{
+    @extend %transition;
+    &:hover{
+        background-color: $color-dark;
+        color: $color-white;
+    }
+}
+.examples-swiper__next, .examples-swiper__prev{
+    @extend %transition;
+    &:hover{
+        background-color: $color-brand;
+    }
+}
+.about__column{
+    @extend %transition;
+    &:hover{
+        background-color: $color-dark;
+        .about__title{
+            color: $color-brand;
+        }
+        .about__text{
+            color: $color-white;
+        }
+    }
+}
+.properties__item{
+    @extend %transition;
+    &:hover{
+        background-color: $color-white;
+        color: $color-dark;
+        svg path{
+            fill: black;
+        }
+    }
+}
+.href_colored{
+    @extend %transition;
+    &:hover{
+        color: $color-hover;
+    }
+}
+.program-card{
+    @extend %transition;
+    &:hover{
+        color: $color-white;
+        background-color: $color-dark;
+        cursor: hover;
+    }
+}

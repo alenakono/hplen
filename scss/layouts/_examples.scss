@@ -1,0 +1,68 @@
+.examples{
+    padding-top: 110px;
+    @include media-tablet{
+        padding-top: 70px;
+    }
+}
+.examples__title{
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 45px;
+}
+.examples-layout{
+    padding-bottom: 40px;
+}
+.examples__item{
+    box-shadow: 5px 5px 15px rgba(176, 174, 168, 0.25);
+    border-radius: 10px;
+    background-color: $color-grey-light;
+    padding: 20px 54px 20px 30px;
+    font-weight: 600;
+    cursor: pointer;
+    @include media-big-mobile{
+        padding: 20px 10px;
+    }
+}
+.examples-swiper {
+    max-width: 1216px;
+    @include media-laptop{
+        margin: 0 -15px;
+    }
+
+}
+.examples-swiper__slide{
+    max-width: 1216px;
+    text-align: center;
+    img{
+        width: 100%;
+    }
+}
+.examples-swiper__next, .examples-swiper__prev{
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    margin-top: calc(-1 * var(--swiper-navigation-size) / 2);
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    
+}
+.examples-swiper__next{
+    right: 10px;
+}
+.examples-swiper__prev{
+    left: 10px;
+}
+.swiper-pagination{
+    background-color: $color-white;
+}
+.swiper-pagination-bullet-active{
+    background-color: $color-brand;
+}

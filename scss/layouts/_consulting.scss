@@ -1,0 +1,121 @@
+.consulting{
+    display: flex;
+    @include media-big-mobile{
+        display: block;
+    }
+}
+.consulting__img{
+    flex: 0 1 50%;
+    background-image: url(../images/help.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.consulting__info{
+    flex: 0 1 50%;
+}
+
+.consulting-about{
+    padding: 60px 39px;
+    max-width: 550px;
+    color: $color-white;
+    @include media-big-mobile{
+        padding: 40px 20px;
+    }
+    
+}
+.consulting-about__bg{
+    background-image: linear-gradient(180deg, #352f9f 0.26%, #262e52 100.83%);
+    position: relative;
+}
+.consulting__bg_image{
+    position: absolute;
+    top: -20%;
+    right: -15%;
+    max-width: 300px;
+    img{
+        width: 100%;
+    }
+    @include media-laptop{
+        max-width: 200px;
+    }
+    @include media-big-mobile{
+        max-width: 150px;
+    }
+}
+.consulting-about__title{
+    font-weight: 600;
+    font-size: 4rem;
+    font-family: "Exo2";
+    line-height: 120%;
+    margin-bottom: 15px;
+    @include media-big-mobile{
+        font-size: 2.5rem;
+    }
+}
+.consulting-about__text{
+    font-weight: 400;
+    margin-bottom: 15px;
+    @include media-big-mobile{
+        font-weight: 500;
+    }
+}
+.consulting-about__list{
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.consulting-form{
+    padding: 40px;
+    color: $color-white;
+    background-color: $color-brand;
+    @include media-big-mobile{
+        padding: 20px;
+    }
+}
+.consulting-form__buttons{
+    margin-left: 15px;
+    max-width: 220px;
+    @include media-big-mobile{
+        margin: 15px 0;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+.consulting-form__title{
+    font-weight: 700;
+    font-size: 2.5rem;
+    max-width: 509px;
+    margin-bottom: 20px;
+    line-height: 130%;
+}
+.consulting__input{
+    display: block;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.24);
+    border-radius: 5px;
+    padding: 15px 17px;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: $color-grey;
+    width: 220px;
+    @include media-big-mobile{
+        width: 100%;
+    }
+    
+}
+.consulting__input:not(:last-child){
+    margin-bottom: 10px;
+}
+.consulting-layout{
+    display: flex;
+    @include media-big-mobile{
+        display: block;
+    }  
+    
+}
+.consulting-form__text{
+    margin-top: 15px;
+    font-size: 1.2rem;
+    line-height: 130%;
+    font-weight: 500;
+}
